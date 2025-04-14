@@ -22,6 +22,8 @@ spec:
             value: ${CLUSTER_NAME}
           - name: serviceAccount.annotations.eks\.amazonaws\.com/role-arn
             value: ${ROLE_ARN}
+          - name: vpcId
+            value: vpc-04a1115f2243a7a53
   destination:
     server: "https://kubernetes.default.svc"
     namespace: aws-load-balancer-controller
